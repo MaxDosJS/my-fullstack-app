@@ -1,0 +1,36 @@
+:root {
+  --button-bg-color: #fafafa;
+  --button-text-color: rgba(51, 51, 51, 0.87);
+  --button-pressed-bg-color: #333;
+  --button-pressed-text-color: #fff;
+  
+}
+
+.Gift_list {
+  text-align: center;
+ 
+}
+
+.Gift_btn {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  
+  
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Gift_btn:active {
+  background-color: var(--button-pressed-bg-color);
+  color: var(--button-pressed-text-color);
+  
+}
+
+@media screen and (max-width: 768px) {
+  .Gift_btn {
+    padding-right: 20px; 
+  }
+}

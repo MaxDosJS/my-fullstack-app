@@ -1,0 +1,68 @@
+.animated-block {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background-color: #d2a168;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+.animated-block .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgb(196, 48, 48);
+}
+.default-state{
+  position: relative;
+  right: 25px;
+  bottom: 20px;
+}
+.animated-block .content .hover-state {
+  display: none;
+}
+
+.animated-block:hover {
+  width: 320px;
+  height: 180px;
+}
+.animated_h2{
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+}
+.animated_p{
+  position: relative;
+  right: 10px;
+}
+.animated-block:hover .content .default-state {
+  display: none;
+}
+
+.animated-block:hover .content .hover-state {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .animated-block,
+  .animated-block:hover {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .animated-block .content,
+  .animated-block:hover .content {
+    height: 100%; 
+  }
+}

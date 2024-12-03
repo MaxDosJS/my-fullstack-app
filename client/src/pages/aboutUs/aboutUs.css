@@ -1,0 +1,31 @@
+.AboutUs {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    height: 1000px;
+  }
+  
+  .AboutUs_block {
+    
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .AboutUs_block h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  .AboutUs_block p {
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  

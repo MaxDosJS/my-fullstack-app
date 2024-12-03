@@ -1,0 +1,32 @@
+
+.ad-container {
+    width: 1500px; 
+    overflow: hidden;
+    padding-top: 370px;
+  }
+  
+  .ad-block {
+    display: flex;
+    animation: moveRight 5s linear infinite;
+  }
+  
+  .ad-block img {
+    width: 250px;
+    height: 200px;
+    margin: 3px;
+  }
+  
+  @keyframes moveRight {
+    to {
+      transform: translateX(0);
+    }
+    from {
+      transform: translateX(calc(100% - 10px));
+    }
+   
+    
+  }
+  
+  .ad-block:hover {
+    animation-play-state: paused;
+  }

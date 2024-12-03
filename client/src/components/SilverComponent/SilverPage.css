@@ -1,0 +1,97 @@
+.silver-page {
+    height: 700px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(51, 51, 51, 1);
+    background-color: #fafafa;
+    padding: 20px;
+  }
+  
+  .silver-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+  }
+  
+  .silver-container a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #333; 
+    border-radius: 10px; 
+  }
+  
+  .silver-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .silver-container a:hover img {
+    transform: scale(1.1); 
+  }
+  
+  .silver-image {
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+  }
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  .pagination button {
+    background-color: rgba(51, 51, 51, 1);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+  }
+  .pagination button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  .pagination span {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  .silver-page h1{
+    padding-left: 250px;
+  }
+  .silver-page_h2{
+    width: 900px;
+    padding-left: 380px;
+    padding-top: 20px;
+  }
+  .module_brand{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    height: 50px;
+  
+    margin-left: 280px;
+    position: relative;
+    top: 100px;
+  }
+  .module_block{
+    display: flex;
+    justify-content: center;
+    width: 190px;
+    height: 40px;
+  }
+  .module_block_h2{
+    color: black;
+  }
+  .module_block_h2:hover{
+  color: rgb(134, 104, 28);   
+  cursor: pointer;
+  }

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+* {
+  margin: 0;
+}
+
+header {
+  height: 90px;
+  background-color: rgba(51, 51, 51, 1);
+}
+
+.header_h1 {
+  width: 50px;
+  height: 50px;
+  color: #f0f0f0;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header_h1:hover {
+  color: rgb(134, 104, 28);
+  cursor: pointer;
+}
+
+.header_blocks {
+ 
+  height: 25px;
+}
+
+.header_text {
+  display: flex;
+ 
+  justify-content: space-around;
+  background-color: rgba(51, 51, 51, 1);
+  margin-left: 180px; 
+  margin-top: -44px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  cursor: pointer;
+  color: #f0f0f0;
+  font-size: 20px;
+}
+
+ul li {
+  visibility: hidden;
+}
+
+ul:hover li {
+  visibility: visible;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+li:hover {
+  color: rgb(134, 104, 28);
+}
+
+.header_text p {
+  color: #f0f0f0;
+}
+
+.header_text p:hover {
+  color: rgb(134, 104, 28);
+  cursor: pointer;
+}
+
+.a_href_header {
+  font-size: 16px;
+  color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.header_contacts_h1 {
+  font-size: 24px;
+  color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.contacts_header_img {
+  width: 36px;
+  height: 36px;
+  
+}
+.contacts_header{
+    display: flex;
+    justify-content: space-between;
+}
+.auth-component-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; 
+}
+
+.auth-component-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.close-auth-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+@media screen and (max-width: 768px) {
+  .header_blocks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header_text {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .header_contacts_list {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}

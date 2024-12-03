@@ -1,0 +1,258 @@
+.MainPage {
+  height: 100vh;
+}
+.bgc_img {
+  position: relative;
+  
+}
+.translation-container {
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.original-text,
+.translated-text {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: #f0f0f0;
+}
+
+.translation-container:hover .original-text {
+  opacity: 0;
+}
+
+.translation-container:hover .translated-text {
+  visibility: visible;
+  opacity: 1;
+}
+.translated-text {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+.logo_block {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 100px;
+}
+
+.logo_img {
+  width: 250px; 
+  
+  
+}
+.beauty {
+  height: auto;
+  background-color: #fafafa;
+  position: relative;
+  bottom: 80px;
+}
+
+.second-screen_list {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+.second-screen_text_p{
+  padding-top: 35 px;
+}
+
+.second-screen_text {
+  width: 100%; 
+  text-align: center; 
+  
+}
+
+.second-screen_text_p {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(51, 51, 51, 1);
+  font-size: 21px;
+  text-align: center; 
+  padding-left: 0; 
+}
+
+.second-screen_text_h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(51, 51, 51, 1);
+  font-size: 30px; 
+  text-align: center; 
+  padding-top: 15px;
+  padding-left: 0; 
+}
+
+.location_salon {
+  height: 400px;
+  margin-top: 20px;
+  background-color: #0f0f10;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%236c7165' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+.location_salon_h2 {
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+
+.location_salon_h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  padding-top: 10px;
+ text-align: center;
+}
+
+.advice{
+  height: 800px;
+  background-color: #fafafa;
+  position: relative;
+  bottom: 80px;
+}
+.advice_p{
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(51, 51, 51, 1);
+  font-size: 26px;
+  text-align: center;
+  position: relative;
+  top: 110px;
+}
+.advice_h2{
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(51, 51, 51, 1);
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 130px;
+}
+.advice_img_container{
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(51, 51, 51, 1);
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  align-items: center;
+  margin: auto;
+  padding-top: 200px;
+}
+.social_media{
+  height: 800px;
+  background-color: #fafafa;
+  position: relative;
+  bottom: 80px;
+}
+.social_h2{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+    
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 120px;
+}
+.social_media_img{
+  width: 1110px;
+  height: 630px;
+    
+  margin-left: 390px;
+  margin-top: 150px;
+}
+.google_maps{
+  padding-left: 1200px;
+  position: relative;
+  top: 400px;
+}
+.location_salon_map_btn {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  padding-top: 20px;
+  margin: 0 auto;
+  align-items: center; 
+}
+
+.parallax {
+ 
+  width: 200px;
+  height: 200px;
+  padding-left: 1200px;
+  padding-top: 50px;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+    .bgc_img {
+      height: 100vh;
+    }
+  
+    .translation-container {
+      top: 40%;
+    }
+  
+    .logo_block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .logo_img {
+      width: 80px;
+      height: auto;
+      margin: 10px;
+    }
+  
+    .second-screen_text {
+      padding: 20px;
+    }
+  
+    .second-screen_list {
+      margin-top: 20px;
+    }
+  
+    .location_salon_h2 {
+      padding-left: 800px;
+    }
+  
+    .location_salon_h1 {
+      padding-left: 740px;
+    }
+  
+    .advice_p,
+    .advice_h2 {
+      text-align: center;
+    }
+  
+    .advice_img_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .advice_img_container img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    .social_media {
+      text-align: center;
+    }
+    .location_salon_map_btn {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .location_salon_map_btn a {
+      width: 100%;
+      max-width: 200px; 
+      margin-bottom: 10px; 
+    }
+  }

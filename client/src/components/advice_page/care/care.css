@@ -1,0 +1,23 @@
+.jewery-container{
+    background-color: #fafafa;
+    height: 1000px;
+}
+
+.jewelry-text-container {
+    border: 2px solid rgba(51, 51, 51, 0.87);
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    max-width: 400px; 
+    margin: 0 auto; 
+    position: relative;
+    top: 100px;
+}
+
+.jewelry-text-container h1{
+    font-family: 'Montserrat', sans-serif;
+}
+.jewelry-text-container h2{
+    font-family: 'Montserrat', sans-serif;
+}

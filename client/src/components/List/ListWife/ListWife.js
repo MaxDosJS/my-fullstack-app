@@ -21,7 +21,7 @@ const ListWife = () => {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:3001/uploads/wife')
+    axios.get('https://silverboxserver.onrender.com/uploads/wife')
       .then(response => setGifts(response.data))
       .catch(error => {
         setError(error);
@@ -38,7 +38,7 @@ const ListWife = () => {
             <div className="gift-item" style={itemStyles} key={index}>
               <Link to={`/gifts/wife/${gift.replace(/\.[^/.]+$/, "")}`}>
                 <img
-                  src={`http://localhost:3001/uploads/wife/${gift}`}
+                  src={`https://silverboxserver.onrender.com/uploads/wife/${gift}`}
                   alt={`Gift ${index + 1} for wife`}
                   style={{ width: '200px', height: 'auto', position: 'relative', right: "35px", cursor: 'pointer' }}
                 />

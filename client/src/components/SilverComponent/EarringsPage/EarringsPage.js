@@ -12,7 +12,7 @@ const EarringsPage = () => {
 
 
   useEffect(() => {
-    fetch("http://localhost:3001/uploads/earrings")
+    fetch("https://silverboxserver.onrender.com/uploads/earrings")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -73,7 +73,7 @@ const EarringsPage = () => {
               rel="noopener noreferrer"
             >
               <img
-                src={`http://localhost:3001/uploads/earrings/${image}`}
+                src={`https://silverboxserver.onrender.com/uploads/earrings/${image}`}
                 alt={`Earrings ${startIndex + index}`}
                 className="silver-image"
               />

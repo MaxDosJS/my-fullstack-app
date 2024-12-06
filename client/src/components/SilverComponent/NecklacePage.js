@@ -8,7 +8,7 @@ const NecklacePage = () => {
   const itemsPerPage = 3;
 
   useEffect(() => {
-    fetch("http://localhost:3001/uploads/necklace")
+    fetch("https://silverboxserver.onrender.com/uploads/necklace")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -69,7 +69,7 @@ const NecklacePage = () => {
             
           >
             <img
-              src={`http://localhost:3001/uploads/necklace/${image}`}
+              src={`https://silverboxserver.onrender.com/uploads/necklace/${image}`}
               alt={`necklace ${startIndex + index}`}
               className="silver-image"
               

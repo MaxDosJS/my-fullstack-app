@@ -8,7 +8,7 @@ const PendantPage = () => {
   const itemsPerPage = 3;
 
   useEffect(() => {
-    fetch("http://localhost:3001/uploads/pendants")
+    fetch("https://silverboxserver.onrender.com/uploads/pendants")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -63,7 +63,7 @@ const PendantPage = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={`http://localhost:3001/uploads/pendants/${image}`}
+              src={`https://silverboxserver.onrender.com/uploads/pendants/${image}`}
               alt={`Pendant ${startIndex + index}`}
               className="silver-image"
             />

@@ -8,7 +8,7 @@ const BraceletsPage = () => {
   const itemsPerPage = 3;
 
   useEffect(() => {
-    fetch("http://localhost:3001/uploads/bracelets")
+    fetch("https://silverboxserver.onrender.com/uploads/bracelets")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -61,7 +61,7 @@ const BraceletsPage = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={`http://localhost:3001/uploads/bracelets/${image}`}
+              src={`https://silverboxserver.onrender.com/uploads/bracelets/${image}`}
               alt={`Bracelet ${startIndex + index}`}
               className="silver-image"
             />

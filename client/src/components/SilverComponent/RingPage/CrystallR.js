@@ -9,7 +9,7 @@ const CrystallR = () => {
   const itemsPerPage = 3;
 
   useEffect(() => {
-    fetch("http://localhost:3001/uploads/rings_crystall")
+    fetch("https://silverboxserver.onrender.com/uploads/rings_crystall")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -59,7 +59,7 @@ const CrystallR = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={`http://localhost:3001/uploads/rings_crystall/${image}`}
+              src={`https://silverboxserver.onrender.com/uploads/rings_crystall/${image}`}
               alt={`Ring ${startIndex + index}`}
               className="silver-image"
             />

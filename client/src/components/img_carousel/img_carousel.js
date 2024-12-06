@@ -8,7 +8,7 @@ const Carousel = () => {
 
   useEffect(() => {
  
-    fetch('http://localhost:3001/uploads/carousel')
+    fetch('https://silverboxserver.onrender.com/uploads/carousel')
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -47,7 +47,7 @@ const Carousel = () => {
           {images.slice(currentIndex, currentIndex + 4).map((image, index) => (
             <div key={index} className='carousel_item'>
               <img
-                src={`http://localhost:3001/uploads/carousel/${image}`}
+                src={`https://silverboxserver.onrender.com/uploads/carousel/${image}`}
                 alt={`Image ${currentIndex + index}`}
                 style={{ maxWidth: '280px', height: 'auto' }}
               />

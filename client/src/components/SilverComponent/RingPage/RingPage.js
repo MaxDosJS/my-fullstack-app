@@ -9,7 +9,7 @@ const RingPage = () => {
   const itemsPerPage = 3;
 
   useEffect(() => {
-    fetch("http://localhost:3001/uploads/rings")
+    fetch("https://silverboxserver.onrender.com/uploads/rings")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -60,7 +60,7 @@ const RingPage = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={`http://localhost:3001/uploads/rings/${image}`}
+              src={`https://silverboxserver.onrender.com/uploads/rings/${image}`}
               alt={`Ring ${startIndex + index}`}
               className="silver-image"
             />

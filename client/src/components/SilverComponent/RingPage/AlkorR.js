@@ -9,7 +9,7 @@ const AlkorR = () => {
   const itemsPerPage = 3;
 
   useEffect(() => {
-    fetch("http://localhost:3001/uploads/rings_alkor")
+    fetch("https://silverboxserver.onrender.com/uploads/rings_alkor")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -62,7 +62,7 @@ const AlkorR = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={`http://localhost:3001/uploads/rings_alkor/${image}`}
+              src={`https://silverboxserver.onrender.com/uploads/rings_alkor/${image}`}
               alt={`Ring ${startIndex + index}`}
               className="silver-image"
             />

@@ -12,7 +12,7 @@ const AlkorE = () => {
 
 
   useEffect(() => {
-    fetch("http://localhost:3001/uploads/earrings_alkor")
+    fetch("https://silverboxserver.onrender.com/uploads/earrings_alkor")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -73,7 +73,7 @@ const AlkorE = () => {
               rel="noopener noreferrer"
             >
               <img
-                src={`http://localhost:3001/uploads/earrings_alkor/${image}`}
+                src={`https://silverboxserver.onrender.com/uploads/earrings_alkor/${image}`}
                 alt={`eararkol ${startIndex + index}`}
                 className="silver-image"
               />

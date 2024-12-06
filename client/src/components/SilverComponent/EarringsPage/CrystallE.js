@@ -12,7 +12,7 @@ const CrystallE = () => {
 
 
   useEffect(() => {
-    fetch("http://localhost:3001/uploads/earrings_crystall")
+    fetch("https://silverboxserver.onrender.com/uploads/earrings_crystall")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -69,7 +69,7 @@ const CrystallE = () => {
               rel="noopener noreferrer"
             >
               <img
-                src={`http://localhost:3001/uploads/earrings_crystall/${image}`}
+                src={`https://silverboxserver.onrender.com/uploads/earrings_crystall/${image}`}
                 alt={`crystall ${startIndex + index}`}
                 className="silver-image"
               />

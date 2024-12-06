@@ -8,7 +8,7 @@ const CufflinksPage = () => {
   const itemsPerPage = 3;
 
   useEffect(() => {
-    fetch("http://localhost:3001/uploads/cuflinks")
+    fetch("https://silverboxserver.onrender.com/uploads/cuflinks")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -63,7 +63,7 @@ const CufflinksPage = () => {
             rel="noopener noreferrer"
           >
             <img
-              src={`http://localhost:3001/uploads/cuflinks/${image}`}
+              src={`https://silverboxserver.onrender.com/uploads/cuflinks/${image}`}
               alt={`Cufflinks ${startIndex + index}`}
               className="silver-image"
             />
